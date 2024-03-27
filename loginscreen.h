@@ -15,6 +15,13 @@ public:
     explicit LoginScreen(QWidget *parent = nullptr);
     ~LoginScreen();
 
+private slots:
+    void on_LoginSwitch_pressed();
+
+    void on_SignupSwitch_clicked();
+
+    void on_LoginSwitch_clicked();
+
 private:
     Ui::LoginScreen *ui;
 };

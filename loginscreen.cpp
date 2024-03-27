@@ -6,9 +6,25 @@ LoginScreen::LoginScreen(QWidget *parent)
     , ui(new Ui::LoginScreen)
 {
     ui->setupUi(this);
+    ui->Login->hide();
 }
 
 LoginScreen::~LoginScreen()
 {
     delete ui;
 }
+
+
+void LoginScreen::on_SignupSwitch_clicked()
+{
+    ui->Login->hide();
+    ui->Signup->show();
+}
+
+
+void LoginScreen::on_LoginSwitch_clicked()
+{
+    ui->Signup->hide();
+    ui->Login->show();
+}
+
