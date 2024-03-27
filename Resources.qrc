@@ -6,5 +6,12 @@
         <file>ui/Assets/logo_with_slogan.png</file>
         <file>ui/Assets/double_polaroid.png</file>
         <file>ui/Assets/single_polaroid.png</file>
+        <file>ui/Assets/WhiteBuildings.png</file>
+        <file>ui/Assets/Captcha.jpg</file>
+        <file>ui/Assets/LogoIcon.png</file>
+        <file>ui/Assets/EmailIcon.png</file>
+        <file>ui/Assets/EyeClosed_light.png</file>
+        <file>ui/Assets/EyeOpen_light.png</file>
+        <file>ui/Assets/LockIcon.png</file>
     </qresource>
 </RCC>

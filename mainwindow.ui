@@ -80,7 +80,7 @@ text-decoration: underline;
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-298</y>
+         <y>0</y>
          <width>976</width>
          <height>1946</height>
         </rect>
@@ -262,7 +262,8 @@ text-decoration: underline;
               <item>
                <widget class="QLabel" name="label_3">
                 <property name="styleSheet">
-                 <string notr="true">QLabel[Type = &quot;H3&quot;]{
+                 <string notr="true">
+QLabel[Type = &quot;H3&quot;]{
 font-family: &quot;Miriam Libre&quot;, sans-serif;
 font-weight: bold;
 font-size: 24px;

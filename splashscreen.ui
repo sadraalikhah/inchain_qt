@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1106</width>
-    <height>985</height>
+    <width>1100</width>
+    <height>732</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>400</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -19,15 +31,11 @@ background-color: qlineargradient(spread:pad, x1:0.47, y1:0.0511364, x2:0.507, y
 }
 QPushButton{
 cursor: pointing Hand;
-background-color: #0187B1;
 font-family: &quot;Miriam Libre&quot;, sans-serif;
 font-weight: bold;
 font-size: 24px;
 color: #ECECEC;
 border-radius: 40px;
-}
-QPushButton:hover{
-background-color: #000000;
 }
 QLabel{
 color: #ECECEC;
@@ -35,10 +43,10 @@ font-family: &quot;Miriam Libre&quot;, sans-serif;
 font-weight: bold;
 }
 [Type = H1]{
-font-size: 56px;
+font-size: 50px;
 }
 [Type = H2]{
-font-size: 42px;
+font-size: 36px;
 }
 [Type = H3]{
 font-size: 32px;
@@ -69,10 +77,10 @@ text-decoration: underline;
      <widget class="QWidget" name="scrollAreaWidgetContents">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1551</width>
-        <height>1597</height>
+        <x>-14</x>
+        <y>-578</y>
+        <width>1095</width>
+        <height>2047</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -80,19 +88,19 @@ text-decoration: underline;
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <property name="leftMargin">
-        <number>0</number>
+        <number>50</number>
        </property>
        <property name="topMargin">
         <number>50</number>
        </property>
        <property name="rightMargin">
-        <number>0</number>
+        <number>42</number>
        </property>
        <property name="bottomMargin">
-        <number>0</number>
+        <number>50</number>
        </property>
        <item>
-        <spacer name="horizontalSpacer">
+        <spacer name="horizontalSpacer_2">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -105,14 +113,20 @@ text-decoration: underline;
         </spacer>
        </item>
        <item>
-        <layout class="QVBoxLayout" name="Body">
+        <layout class="QVBoxLayout" name="Body" stretch="1,1,0,0,0">
          <property name="spacing">
-          <number>100</number>
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
          </property>
          <item>
           <layout class="QVBoxLayout" name="Hero">
            <property name="spacing">
             <number>90</number>
+           </property>
+           <property name="bottomMargin">
+            <number>174</number>
            </property>
            <item>
             <widget class="QLabel" name="label">
@@ -150,32 +164,81 @@ text-decoration: underline;
                <height>80</height>
               </size>
              </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #0187B1;
+}
+QPushButton:hover{
+background-color: #009FD0;
+color: #FFFFFFF;
+}
+QPushButton:pressed{
+background-color: #005E7B;
+color: #D0D0D0;
+border-top: 4px solid #004D65;
+border-left: 3px solid #004D65;
+border-right: 3px solid #004D65;
+border-bottom: 2px solid #004D65;
+}</string>
+             </property>
              <property name="text">
-              <string>PushButton</string>
+              <string>GET STARTED</string>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+             <property name="Type" stdset="0">
+              <string>Default</string>
              </property>
             </widget>
            </item>
           </layout>
          </item>
          <item>
-          <layout class="QGridLayout" name="gridLayout_4" columnstretch="1,1" columnminimumwidth="1,1">
+          <layout class="QGridLayout" name="Content" rowstretch="1,0" columnstretch="1,0,0">
            <property name="sizeConstraint">
-            <enum>QLayout::SetMinAndMaxSize</enum>
+            <enum>QLayout::SetMinimumSize</enum>
+           </property>
+           <property name="bottomMargin">
+            <number>46</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>0</number>
            </property>
            <item row="0" column="0">
-            <layout class="QVBoxLayout" name="Content">
+            <layout class="QVBoxLayout" name="Texts" stretch="1,1">
              <property name="spacing">
               <number>28</number>
              </property>
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_2">
+              <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1">
                <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
                 <number>0</number>
                </property>
                <item>
                 <widget class="QLabel" name="label_2">
+                 <property name="styleSheet">
+                  <string notr="true">
+font-size: 50px;
+</string>
+                 </property>
                  <property name="text">
                   <string>Who is InChain for?</string>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
                  </property>
                  <property name="Type" stdset="0">
                   <string>H1</string>
@@ -184,9 +247,16 @@ text-decoration: underline;
                </item>
                <item>
                 <widget class="QLabel" name="label_6">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 28px;
+</string>
+                 </property>
                  <property name="text">
                   <string>Anyone looking to navigate 
 their professional life.</string>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
                  </property>
                  <property name="Type" stdset="0">
                   <string>H3</string>
@@ -196,37 +266,79 @@ their professional life.</string>
               </layout>
              </item>
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_3">
+              <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0">
                <property name="spacing">
-                <number>15</number>
+                <number>22</number>
                </property>
                <item>
-                <widget class="QLabel" name="label_4">
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font-size: 24px;
+text-decoration: underline;
+text-align: left;
+}
+QPushButton:hover{
+font-size: 25px;
+text-decoration: none;
+color: #FFFFFF;
+}
+QPushButton:pressed{
+font-size: 23px;
+text-decoration: none;
+color: #ACBDCA;
+}</string>
+                 </property>
                  <property name="text">
                   <string>&gt; Find a coworker or classmate</string>
                  </property>
-                 <property name="Type" stdset="0">
-                  <string>Link</string>
-                 </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_3">
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font-size: 24px;
+text-decoration: underline;
+text-align: left;
+}
+QPushButton:hover{
+font-size: 25px;
+text-decoration: none;
+color: #FFFFFF;
+}
+QPushButton:pressed{
+font-size: 23px;
+text-decoration: none;
+color: #ACBDCA;
+}</string>
+                 </property>
                  <property name="text">
                   <string>&gt; Find a new job</string>
                  </property>
-                 <property name="Type" stdset="0">
-                  <string>Link</string>
-                 </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_5">
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font-size: 24px;
+text-decoration: underline;
+text-align: left;
+}
+QPushButton:hover{
+font-size: 25px;
+text-decoration: none;
+color: #FFFFFF;
+}
+QPushButton:pressed{
+font-size: 23px;
+text-decoration: none;
+color: #ACBDCA;
+}</string>
+                 </property>
                  <property name="text">
                   <string>&gt; Find a course or training</string>
-                 </property>
-                 <property name="Type" stdset="0">
-                  <string>Link</string>
                  </property>
                 </widget>
                </item>
@@ -234,48 +346,319 @@ their professional life.</string>
              </item>
             </layout>
            </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="label_7">
+           <item row="0" column="1" colspan="2">
+            <widget class="AspectRatioLabel" name="double_polaroid">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>400</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="sizeIncrement">
+              <size>
+               <width>1</width>
+               <height>1</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>200</width>
+               <height>200</height>
+              </size>
+             </property>
              <property name="text">
               <string/>
              </property>
              <property name="pixmap">
               <pixmap resource="Resources.qrc">:/new/prefix1/ui/Assets/double_polaroid.png</pixmap>
              </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="AspectRatioLabel" name="single_polaroid">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>500</width>
+               <height>580</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>580</height>
+              </size>
+             </property>
+             <property name="sizeIncrement">
+              <size>
+               <width>1</width>
+               <height>1</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="Resources.qrc">:/new/prefix1/ui/Assets/single_polaroid.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
           </layout>
          </item>
+         <item>
+          <layout class="QVBoxLayout" name="CTA">
+           <property name="spacing">
+            <number>42</number>
+           </property>
+           <property name="bottomMargin">
+            <number>70</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="styleSheet">
+              <string notr="true">font-size: 32px;
+</string>
+             </property>
+             <property name="text">
+              <string>Join your colleges, find your coworkers and friends on 
+InChain </string>
+             </property>
+             <property name="Type" stdset="0">
+              <string>H2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+border-color: #ECECEC;
+border-style: solid;
+border-width: 4px;
+}
+QPushButton:hover{
+color: #6AF6FF;
+border-color: #6AF6FF;
+}
+QPushButton:pressed{
+color: #5ACEDD;
+border-color: #5ACEDD;
+border-width: 6px;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>SIGN UP NOW</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <property name="Type" stdset="0">
+              <string>Ghost</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="bottomMargin">
+              <number>53</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="spacing">
+                <number>20</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pushButton_6">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font-size: 24px;
+text-decoration: underline;
+text-align: center;
+}
+QPushButton:hover{
+font-size: 24.2px;
+text-decoration: none;
+color: #FFFFFF;
+}
+QPushButton:pressed{
+font-size: 23px;
+text-decoration: none;
+color: #ACBDCA;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Privacy Policy</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_7">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font-size: 24px;
+text-decoration: underline;
+text-align: center;
+}
+QPushButton:hover{
+font-size: 24.2px;
+text-decoration: none;
+color: #FFFFFF;
+}
+QPushButton:pressed{
+font-size: 23px;
+text-decoration: none;
+color: #ACBDCA;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Cookies Policy</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_8">
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font-size: 24px;
+text-decoration: underline;
+text-align: center;
+}
+QPushButton:hover{
+font-size: 24.2px;
+text-decoration: none;
+color: #FFFFFF;
+}
+QPushButton:pressed{
+font-size: 23px;
+text-decoration: none;
+color: #ACBDCA;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Terms of Use</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+text-align: center;
+color: #2DC4DF
+}</string>
+               </property>
+               <property name="text">
+                <string>Copyright © 2024 - 2030 InChain®. All rights reserved.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QWidget" name="Footer" native="true"/>
+         </item>
         </layout>
        </item>
        <item>
-        <spacer name="horizontalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_4">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_2">
+        <spacer name="horizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -293,6 +676,13 @@ their professional life.</string>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AspectRatioLabel</class>
+   <extends>QLabel</extends>
+   <header>aspectratiolabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="Resources.qrc"/>
  </resources>
