@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "splashscreen.h"
 #include "loginscreen.h"
-#include "signup.h"
+#include "userdetails.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -34,9 +34,9 @@ int main(int argc, char *argv[])
     MainWindow w;
     splashScreen s;
     LoginScreen l;
-    signUp si;
+    UserDetails ud;
 
     // si.setWindowState(Qt::WindowMaximized);
-    si.show();
+    ud.show();
     return app.exec();
 }

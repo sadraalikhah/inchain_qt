@@ -13,20 +13,20 @@ SOURCES += \
     loginscreen.cpp \
     main.cpp \
     mainwindow.cpp \
-    signup.cpp \
-    splashscreen.cpp
+    splashscreen.cpp \
+    userdetails.cpp
 
 HEADERS += \
     aspectratiolabel.h \
     loginscreen.h \
     mainwindow.h \
-    signup.h \
-    splashscreen.h
+    splashscreen.h \
+    userdetails.h
 
 FORMS += \
+    userdetails.ui \
     loginscreen.ui \
     mainwindow.ui \
-    signup.ui \
     splashscreen.ui
 
 TRANSLATIONS += \
