@@ -1,4 +1,3 @@
-#include "mainwindow.h"
 #include "splashscreen.h"
 #include "loginscreen.h"
 #include "userdetails.h"
@@ -31,7 +30,6 @@ int main(int argc, char *argv[])
         }
     }
 
-    MainWindow w;
     splashScreen s;
     LoginScreen l;
     UserDetails ud;

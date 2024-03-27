@@ -12,21 +12,18 @@ SOURCES += \
     aspectratiolabel.cpp \
     loginscreen.cpp \
     main.cpp \
-    mainwindow.cpp \
     splashscreen.cpp \
     userdetails.cpp
 
 HEADERS += \
     aspectratiolabel.h \
     loginscreen.h \
-    mainwindow.h \
     splashscreen.h \
     userdetails.h
 
 FORMS += \
     userdetails.ui \
     loginscreen.ui \
-    mainwindow.ui \
     splashscreen.ui
 
 TRANSLATIONS += \
