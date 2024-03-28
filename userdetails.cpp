@@ -117,9 +117,22 @@ UserDetails::UserDetails(QWidget *parent)
     ui->EmploymentType->addItem("Contract");
     ui->EmploymentType->addItem("Freelance");
     ui->EmploymentType->addItem("Internship");
+
+
+    ui->AgeVerificationSwitch->setCheckable(true);
+
 }
 
 UserDetails::~UserDetails()
 {
     delete ui;
 }
+
+
+void UserDetails::toggleAgeVerification()
+{
+    bool currentState = ui->AgeVerificationSwitch->isChecked();
+    ui->AgeVerificationSwitch->setChecked(!currentState);
+}
+
+

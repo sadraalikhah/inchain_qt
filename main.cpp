@@ -35,6 +35,6 @@ int main(int argc, char *argv[])
     UserDetails ud;
 
     // si.setWindowState(Qt::WindowMaximized);
-    l.show();
+    ud.show();
     return app.exec();
 }

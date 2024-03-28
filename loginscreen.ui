@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>655</width>
-    <height>1718</height>
+    <width>431</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -55,7 +55,7 @@ font-size: 32px;
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
+   <item alignment="Qt::AlignHCenter">
     <widget class="QGroupBox" name="Login">
      <property name="enabled">
       <bool>true</bool>
@@ -608,7 +608,7 @@ font-size: 24px;
 }
 QPushButton::pressed{
 background-color: #00769B;
-border-radius: 21px;
+
 }</string>
         </property>
         <property name="text">
@@ -619,7 +619,7 @@ border-radius: 21px;
      </layout>
     </widget>
    </item>
-   <item>
+   <item alignment="Qt::AlignHCenter">
     <widget class="QGroupBox" name="Signup">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -1392,7 +1392,7 @@ font-size: 24px;
 }
 QPushButton::pressed{
 background-color: #00769B;
-border-radius: 21px;
+
 }</string>
         </property>
         <property name="text">

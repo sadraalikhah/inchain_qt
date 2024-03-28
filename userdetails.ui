@@ -6,744 +6,1285 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>779</width>
-    <height>724</height>
+    <width>525</width>
+    <height>624</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>525</width>
+    <height>624</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_7">
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(87, 205, 255, 255), stop:0.333333 rgba(37, 146, 193, 255), stop:1 rgba(0, 104, 148, 255));</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
    <item>
-    <widget class="QScrollArea" name="scrollArea">
-     <property name="widgetResizable">
-      <bool>true</bool>
+    <widget class="QWidget" name="Form" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>738</width>
-        <height>2000</height>
-       </rect>
+     <property name="minimumSize">
+      <size>
+       <width>502</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>600</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+background-color: #ECECEC;
+border-radius: 15px;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_12">
+      <property name="spacing">
+       <number>36</number>
       </property>
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>2000</height>
-       </size>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
       </property>
-      <widget class="QWidget" name="JobTitleBox_5" native="true">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>30</y>
-         <width>371</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>80</height>
-        </size>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>11</number>
-        </property>
-        <item>
-         <widget class="QLabel" name="label_5">
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-color: #727272;
-}</string>
-          </property>
-          <property name="text">
-           <string>First name*</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QTextEdit" name="textEdit">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="JobTitleBox_4" native="true">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>410</y>
-         <width>371</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>80</height>
-        </size>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <item>
-         <widget class="QLabel" name="label_4">
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-color: #727272;
-}</string>
-          </property>
-          <property name="text">
-           <string>Most recent company*</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="Company">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="editable">
-           <bool>false</bool>
-          </property>
-          <property name="placeholderText">
-           <string>Enter the name</string>
-          </property>
-          <property name="duplicatesEnabled">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="widget" native="true">
-       <property name="geometry">
-        <rect>
-         <x>560</x>
-         <y>40</y>
-         <width>120</width>
-         <height>80</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QWidget" name="JobTitleBox_2" native="true">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>460</y>
-         <width>371</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>80</height>
-        </size>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>11</number>
-        </property>
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-color: #727272;
-}</string>
-          </property>
-          <property name="text">
-           <string>Employment type</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="EmploymentType">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="editable">
-           <bool>false</bool>
-          </property>
-          <property name="placeholderText">
-           <string>Select one</string>
-          </property>
-          <property name="duplicatesEnabled">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="JobTitleBox_6" native="true">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>100</y>
-         <width>371</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>80</height>
-        </size>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>11</number>
-        </property>
-        <item>
-         <widget class="QLabel" name="label_6">
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-color: #727272;
-}</string>
-          </property>
-          <property name="text">
-           <string>Last name*</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QTextEdit" name="textEdit_2">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="JobTitleBox_7" native="true">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>180</y>
-         <width>371</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>80</height>
-        </size>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_8">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>11</number>
-        </property>
-        <item>
-         <widget class="QLabel" name="label_7">
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-color: #727272;
-}</string>
-          </property>
-          <property name="text">
-           <string>Additional name</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QTextEdit" name="textEdit_3">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="JobTitleBox_8" native="true">
-       <property name="geometry">
-        <rect>
-         <x>80</x>
-         <y>280</y>
-         <width>221</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>80</height>
-        </size>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_9">
-        <property name="spacing">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>11</number>
-        </property>
-        <item>
-         <widget class="QLabel" name="label_8">
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-color: #727272;
-}</string>
-          </property>
-          <property name="text">
-           <string>Date of Birth</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDateEdit" name="dateEdit">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>200</width>
-            <height>30</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="widget_2" native="true">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>630</y>
-         <width>521</width>
-         <height>241</height>
-        </rect>
-       </property>
-       <widget class="QWidget" name="JobTitleBox_3" native="true">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>40</y>
-          <width>371</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>80</height>
-         </size>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>11</number>
-         </property>
+      <property name="leftMargin">
+       <number>35</number>
+      </property>
+      <property name="topMargin">
+       <number>40</number>
+      </property>
+      <property name="rightMargin">
+       <number>35</number>
+      </property>
+      <property name="bottomMargin">
+       <number>31</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="HeaderBox" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_14">
          <item>
-          <widget class="QLabel" name="label_3">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-color: #727272;
-}</string>
-           </property>
-           <property name="text">
-            <string>School or College/University*</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="University">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="editable">
-            <bool>false</bool>
-           </property>
-           <property name="placeholderText">
-            <string>Enter the name</string>
-           </property>
-           <property name="duplicatesEnabled">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="JobTitleBox_9" native="true">
-        <property name="geometry">
-         <rect>
-          <x>60</x>
-          <y>130</y>
-          <width>221</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>80</height>
-         </size>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_10">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>11</number>
-         </property>
-         <item>
-          <widget class="QLabel" name="label_9">
-           <property name="styleSheet">
-            <string notr="true">QLabel{
-color: #727272;
-}</string>
-           </property>
-           <property name="text">
-            <string>Start year*</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QDateEdit" name="dateEdit_2">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
+          <widget class="QLabel" name="Header">
            <property name="maximumSize">
             <size>
-             <width>200</width>
-             <height>30</height>
+             <width>16777215</width>
+             <height>200</height>
             </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color: #000000;
+font-size: 30px;
+font-family: &quot;Miriam Libre&quot;, sans-serif;
+font-weight: bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>Additional details</string>
            </property>
           </widget>
          </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="JobTitleBox_10" native="true">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>130</y>
-          <width>221</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>80</height>
-         </size>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_11">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>11</number>
-         </property>
          <item>
-          <widget class="QLabel" name="label_10">
+          <widget class="QLabel" name="HeaderHint">
            <property name="styleSheet">
             <string notr="true">QLabel{
 color: #727272;
 }</string>
            </property>
            <property name="text">
-            <string>End year (or expected)*</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QDateEdit" name="dateEdit_3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>30</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>200</width>
-             <height>30</height>
-            </size>
+            <string>*indicates necessary</string>
            </property>
           </widget>
          </item>
         </layout>
        </widget>
-      </widget>
-      <widget class="QWidget" name="JobTitleBox" native="true">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>330</y>
-         <width>371</width>
-         <height>80</height>
-        </rect>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>80</height>
-        </size>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <property name="spacing">
-         <number>0</number>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="styleSheet">
+         <string notr="true">QScrollBar:vertical{
+width:15px;
+background: #D9D9D9;
+border-radius: 7px;
+}
+QScrollBar::handle:vertical {
+background: #AFAFAF;
+min-height: 20px;
+border-radius: 7px;
+}
+QScrollbar::up-arrow:vertical{
+border: none;
+background: none;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+border: none;
+background: none;
+width: 0px; height: 0px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+border: none;
+background: none;
+height: 0px;
+}</string>
         </property>
-        <property name="topMargin">
-         <number>11</number>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
         </property>
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="styleSheet">
-           <string notr="true">QLabel{
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>418</width>
+           <height>1200</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>1200</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QWidget" name="FirstNameBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="FirstNameHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
 color: #727272;
 }</string>
-          </property>
-          <property name="text">
-           <string>Most recent job title*</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="JobTitle">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="editable">
-           <bool>false</bool>
-          </property>
-          <property name="placeholderText">
-           <string>Enter the name</string>
-          </property>
-          <property name="duplicatesEnabled">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
+               </property>
+               <property name="text">
+                <string>First name*</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="FirstNameEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTextEdit{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+}</string>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="LastNameBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="LastNameHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+color: #727272;
+}</string>
+               </property>
+               <property name="text">
+                <string>Last name*</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="LastNameEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTextEdit{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+}</string>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="AdditionalNameBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="AdditionalNameHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+color: #727272;
+}</string>
+               </property>
+               <property name="text">
+                <string>Additional name</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="AdditionalNameEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTextEdit{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+}</string>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="DateofBirthBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="DateofBirthHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+color: #727272;
+}</string>
+               </property>
+               <property name="text">
+                <string>Date of Birth</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="DateofBirthEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QDateEdit{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+padding-left: 5px;
+selection-background-color: rgb(0, 187, 255);
+}
+/*buttons*/
+QDateEdit::drop-down{
+background-color: none;
+border: none;
+}
+
+/*buttons pressed*/
+QDateEdit::drop-down::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+
+/*arrow*/
+QDateEdit::down-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/DownArrow.png);
+width: 10px;
+height: 30px;
+border: none;
+}</string>
+               </property>
+               <property name="maximumDate">
+                <date>
+                 <year>2024</year>
+                 <month>12</month>
+                 <day>31</day>
+                </date>
+               </property>
+               <property name="minimumDate">
+                <date>
+                 <year>1930</year>
+                 <month>9</month>
+                 <day>14</day>
+                </date>
+               </property>
+               <property name="displayFormat">
+                <string>yyyy-mm-dd</string>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+               <property name="date">
+                <date>
+                 <year>2000</year>
+                 <month>1</month>
+                 <day>1</day>
+                </date>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="JobTitleBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="JobTitleHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+color: #727272;
+}</string>
+               </property>
+               <property name="text">
+                <string>Most recent job title*</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="JobTitle">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+padding-left: 5px;
+selection-background-color: rgb(0, 187, 255);
+}
+/*buttons*/
+QComboBox::drop-down{
+background-color: none;
+border: none;
+}
+
+/*buttons pressed*/
+QComboBox::drop-down::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+
+/*arrow*/
+QComboBox::down-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/DownArrow.png);
+width: 10px;
+height: 30px;
+border: none;
+}</string>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="placeholderText">
+                <string>Enter the name</string>
+               </property>
+               <property name="duplicatesEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="CompanyBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="CompanyHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+color: #727272;
+}</string>
+               </property>
+               <property name="text">
+                <string>Most recent company*</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="Company">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+padding-left: 5px;
+selection-background-color: rgb(0, 187, 255);
+}
+/*buttons*/
+QComboBox::drop-down{
+background-color: none;
+border: none;
+}
+
+/*buttons pressed*/
+QComboBox::drop-down::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+
+/*arrow*/
+QComboBox::down-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/DownArrow.png);
+width: 10px;
+height: 30px;
+border: none;
+}</string>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="placeholderText">
+                <string>Enter the name</string>
+               </property>
+               <property name="duplicatesEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="EmploymentTypeBox" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>11</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="EmploymentTypeHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+color: #727272;
+}</string>
+               </property>
+               <property name="text">
+                <string>Employment type</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="EmploymentType">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+padding-left: 5px;
+selection-background-color: rgb(0, 187, 255);
+}
+/*buttons*/
+QComboBox::drop-down{
+background-color: none;
+border: none;
+}
+
+/*buttons pressed*/
+QComboBox::drop-down::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+
+/*arrow*/
+QComboBox::down-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/DownArrow.png);
+width: 10px;
+height: 30px;
+border: none;
+}</string>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="placeholderText">
+                <string>Select one</string>
+               </property>
+               <property name="duplicatesEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="EducationBox" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: none;</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <widget class="QWidget" name="SchoolBox" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <widget class="QLabel" name="UniversityHint">
+                  <property name="styleSheet">
+                   <string notr="true">QLabel{
+color: #727272;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>School or College/University*</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="University">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+padding-left: 5px;
+selection-background-color: rgb(0, 187, 255);
+}
+/*buttons*/
+QComboBox::drop-down{
+background-color: none;
+border: none;
+}
+
+/*buttons pressed*/
+QComboBox::drop-down::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+
+/*arrow*/
+QComboBox::down-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/DownArrow.png);
+width: 10px;
+height: 30px;
+border: none;
+}</string>
+                  </property>
+                  <property name="editable">
+                   <bool>false</bool>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Enter the name</string>
+                  </property>
+                  <property name="duplicatesEnabled">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="YearBox" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="StartYearBox" native="true">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>183</width>
+                    <height>80</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>80</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: none;</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>11</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="StartYear">
+                     <property name="styleSheet">
+                      <string notr="true">QLabel{
+color: #727272;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Start year*</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSpinBox" name="StartYearSpin">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>67</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+QSpinBox{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+padding-left: 5px;
+}
+/*buttons*/
+QSpinBox::up-button{
+background-color: none;
+border: none;
+}
+QSpinBox::down-button{
+background-color: none;
+border: none;
+}
+
+/*buttons pressed*/
+QSpinBox::up-button::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+QSpinBox::down-button::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+
+/*arrows*/
+QSpinBox::up-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/UpArrow.png);
+width: 10px;
+height: 10px;
+border: none;
+}
+QSpinBox::down-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/DownArrow.png);
+width: 10px;
+height: 10px;
+border: none;
+}</string>
+                     </property>
+                     <property name="minimum">
+                      <number>1960</number>
+                     </property>
+                     <property name="maximum">
+                      <number>2024</number>
+                     </property>
+                     <property name="value">
+                      <number>2000</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="EndYearBox" native="true">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>183</width>
+                    <height>80</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>80</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: none;</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_11">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>11</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="EndYear">
+                     <property name="styleSheet">
+                      <string notr="true">QLabel{
+color: #727272;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>End year (or expected)*</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSpinBox" name="EndYearSpin">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>67</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+QSpinBox{
+border: 1px solid #000000;
+border-radius: 3px;
+background-color: #FFFFFF;
+padding-left: 5px;
+}
+/*buttons*/
+QSpinBox::up-button{
+background-color: none;
+border: none;
+}
+QSpinBox::down-button{
+background-color: none;
+border: none;
+}
+
+/*buttons pressed*/
+QSpinBox::up-button::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+QSpinBox::down-button::pressed{
+background-color: #F6F6F6;
+border-radius: 3px;
+}
+
+/*arrows*/
+QSpinBox::up-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/UpArrow.png);
+width: 10px;
+height: 10px;
+border: none;
+}
+QSpinBox::down-arrow{
+color: #000000;
+image: url(:/new/prefix1/ui/Assets/DownArrow.png);
+width: 10px;
+height: 10px;
+border: none;
+}</string>
+                     </property>
+                     <property name="minimum">
+                      <number>1960</number>
+                     </property>
+                     <property name="maximum">
+                      <number>2024</number>
+                     </property>
+                     <property name="value">
+                      <number>2005</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="AgeVerificationBox" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>68</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QWidget{
+background-color: none;
+border: 2px solid #0187B1;
+border-radius: 8px;
+}</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="leftMargin">
+              <number>22</number>
+             </property>
+             <property name="rightMargin">
+              <number>22</number>
+             </property>
+             <item alignment="Qt::AlignVCenter">
+              <widget class="QLabel" name="AgeVerificationHint">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+color: #727272;
+font-size: 20px;
+border: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>I'm over 16</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignVCenter">
+              <widget class="QPushButton" name="AgeVerificationSwitch">
+               <property name="minimumSize">
+                <size>
+                 <width>68</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>68</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: none;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="Resources.qrc">
+                 <normaloff>:/new/prefix1/ui/Assets/SwitchOff.png</normaloff>
+                 <normalon>:/new/prefix1/ui/Assets/SwitchOn.png</normalon>:/new/prefix1/ui/Assets/SwitchOff.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>60</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <property name="autoRepeat">
+                <bool>false</bool>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+               <property name="default">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+Height: 80px;
+color: #FFFFFF;
+font-size: 24px;
+font-family: &quot;Miriam Libre&quot;, sans-serif;
+font-weight: bold;
+background-color: #0187B1;
+}
+QPushButton::pressed{
+background-color: #00769B;
+}</string>
+            </property>
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

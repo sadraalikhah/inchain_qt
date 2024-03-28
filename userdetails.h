@@ -15,6 +15,10 @@ public:
     explicit UserDetails(QWidget *parent = nullptr);
     ~UserDetails();
 
+private slots:
+    void toggleAgeVerification();
+
+
 private:
     Ui::UserDetails *ui;
 };
