@@ -1,10 +1,10 @@
-#include "mainwindow.h"
 #include "splashscreen.h"
+#include "loginscreen.h"
+#include "userdetails.h"
 
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
-#include <Qlabel>
 #include <QFontDatabase>
 
 int main(int argc, char *argv[])
@@ -30,8 +30,11 @@ int main(int argc, char *argv[])
         }
     }
 
-    MainWindow w;
-    splashScreen splash;
-    splash.show();
+    splashScreen s;
+    LoginScreen l;
+    UserDetails ud;
+
+    // si.setWindowState(Qt::WindowMaximized);
+    ud.show();
     return app.exec();
 }

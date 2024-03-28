@@ -1,10 +1,19 @@
 <RCC>
     <qresource prefix="/new/prefix1">
-        <file>ui/Assets/Metal Lines@1-1920x3400 1.jpg</file>
         <file>ui/Assets/MiriamLibre-Bold.ttf</file>
         <file>ui/Assets/MiriamLibre-Regular.ttf</file>
         <file>ui/Assets/logo_with_slogan.png</file>
         <file>ui/Assets/double_polaroid.png</file>
         <file>ui/Assets/single_polaroid.png</file>
+        <file>ui/Assets/Captcha.jpg</file>
+        <file>ui/Assets/LogoIcon.png</file>
+        <file>ui/Assets/EmailIcon.png</file>
+        <file>ui/Assets/EyeClosed_light.png</file>
+        <file>ui/Assets/EyeOpen_light.png</file>
+        <file>ui/Assets/LockIcon.png</file>
+        <file>ui/Assets/DownArrow.png</file>
+        <file>ui/Assets/UpArrow.png</file>
+        <file>ui/Assets/SwitchOff.png</file>
+        <file>ui/Assets/SwitchOn.png</file>
     </qresource>
 </RCC>
