@@ -9,16 +9,21 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    aspectratiolabel.cpp \
+    loginscreen.cpp \
     main.cpp \
-    mainwindow.cpp \
-    splashscreen.cpp
+    splashscreen.cpp \
+    userdetails.cpp
 
 HEADERS += \
-    mainwindow.h \
-    splashscreen.h
+    aspectratiolabel.h \
+    loginscreen.h \
+    splashscreen.h \
+    userdetails.h
 
 FORMS += \
-    mainwindow.ui \
+    userdetails.ui \
+    loginscreen.ui \
     splashscreen.ui
 
 TRANSLATIONS += \
