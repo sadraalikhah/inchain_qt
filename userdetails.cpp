@@ -119,6 +119,7 @@ UserDetails::UserDetails(QWidget *parent)
     ui->EmploymentType->addItem("Internship");
 
 
+
     ui->AgeVerificationSwitch->setCheckable(true);
 
 }
