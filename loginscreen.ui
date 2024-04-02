@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>431</width>
-    <height>984</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -542,6 +542,14 @@ font-weight: medium;
 font-family: &quot;Inter&quot; ,sans-serif;
 font-size: 18px;
 text-align: left;
+}
+
+QPushButton::hover{
+color: #28B3DE;
+}
+
+QPushButton::pressed{
+color: #0187B1;
 }</string>
              </property>
              <property name="text">
@@ -571,6 +579,14 @@ font-weight: medium;
 font-family: &quot;Inter&quot; ,sans-serif;
 font-size: 18px;
 text-align: right;
+}
+
+QPushButton::hover{
+color: #28B3DE;
+}
+
+QPushButton::pressed{
+color: #28B3DE;
 }</string>
              </property>
              <property name="text">
@@ -605,6 +621,9 @@ text-align: right;
 background-color: #0187B1;
 border-radius: 16px;
 font-size: 24px;
+}
+QPushButton::hover{
+background-color: #28B3DE;
 }
 QPushButton::pressed{
 background-color: #00769B;
@@ -1103,6 +1122,14 @@ font-weight: medium;
 font-family: &quot;Inter&quot; ,sans-serif;
 font-size: 18px;
 text-align: left;
+}
+
+QPushButton::hover{
+color: #28B3DE;
+}
+
+QPushButton::pressed{
+color: #0187B1;
 }</string>
              </property>
              <property name="text">
@@ -1119,7 +1146,7 @@ text-align: left;
              </property>
             </widget>
            </item>
-           <item alignment="Qt::AlignVCenter">
+           <item>
             <widget class="QPushButton" name="LoginSwitch">
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
@@ -1132,6 +1159,14 @@ font-weight: medium;
 font-family: &quot;Inter&quot; ,sans-serif;
 font-size: 18px;
 text-align: right;
+}
+
+QPushButton::hover{
+color: #28B3DE;
+}
+
+QPushButton::pressed{
+color: #28B3DE;
 }</string>
              </property>
              <property name="text">
@@ -1389,6 +1424,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
 background-color: #0187B1;
 border-radius: 16px;
 font-size: 24px;
+}
+QPushButton::hover{
+background-color: #28B3DE;
 }
 QPushButton::pressed{
 background-color: #00769B;

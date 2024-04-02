@@ -36,7 +36,7 @@
      </property>
      <property name="minimumSize">
       <size>
-       <width>502</width>
+       <width>479</width>
        <height>0</height>
       </size>
      </property>
@@ -103,7 +103,7 @@ color: #727272;
 }</string>
            </property>
            <property name="text">
-            <string>*indicates necessary</string>
+            <string>*Indicates necessary</string>
            </property>
           </widget>
          </item>
