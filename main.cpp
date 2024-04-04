@@ -1,6 +1,7 @@
 #include "splashscreen.h"
 #include "loginscreen.h"
 #include "userdetails.h"
+#include "verification.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -33,8 +34,10 @@ int main(int argc, char *argv[])
     splashScreen s;
     LoginScreen l;
     UserDetails ud;
+    Verification v;
 
     // si.setWindowState(Qt::WindowMaximized);
-    s.show();
+    v.show();
+    v.showPopup();
     return app.exec();
 }

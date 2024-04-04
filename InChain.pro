@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui widgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,18 +13,21 @@ SOURCES += \
     loginscreen.cpp \
     main.cpp \
     splashscreen.cpp \
-    userdetails.cpp
+    userdetails.cpp \
+    verification.cpp
 
 HEADERS += \
     aspectratiolabel.h \
     loginscreen.h \
     splashscreen.h \
-    userdetails.h
+    userdetails.h \
+    verification.h
 
 FORMS += \
     userdetails.ui \
     loginscreen.ui \
-    splashscreen.ui
+    splashscreen.ui \
+    verification.ui
 
 TRANSLATIONS += \
     InChain_fa_IR.ts
